@@ -21,4 +21,9 @@ public class Account {
     private String password;
 
 
+    public void EncryptPassword(String password){
+        this.password = password;
+    }
+
+
 }

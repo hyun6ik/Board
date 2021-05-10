@@ -17,10 +17,10 @@
             <a th:href="@{/}"><img class="mb-4" src="https://cdn.imweb.me/thumbnail/20200401/31e13b275d567.jpg" alt="" width="72" height="57"></a>
             <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
             <div th:if="${param.error}" class="alert alert-danger" role="alert">
-                Invalid username and password.
+                유효하지 않는 계정 또는 비밀번호 입니다.
             </div>
             <div th:if="${param.logout}" class="alert alert-dark" role="alert">
-                You have been logged out.
+                로그아웃 되었습니다.
             </div>
             <label for="username" class="visually-hidden">Username</label>
             <input type="text" id="username" name="username" class="form-control" placeholder="Username" required autofocus>
@@ -31,8 +31,8 @@
     <!--                <input type="checkbox" value="remember-me"> Remember me-->
     <!--            </label>-->
     <!--        </div>-->
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-            <p class="mt-5 mb-3 text-muted">&copy; 2017-2021</p>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">로그인</button>
+            <p class="mt-5 mb-3 text-muted">&copy; 2021/5/10~</p>
     </form>
 </body>
 </html>
