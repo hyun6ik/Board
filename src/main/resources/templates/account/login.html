@@ -1,5 +1,6 @@
 <!doctype html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -9,6 +10,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link th:href="@{/css/signin.css}" rel="stylesheet">
     <title>Login</title>
+<!--    <span sec:authorize="isAuthenticated()">-->
+<!--                | Logged user: <span sec:authentication="username"></span> |-->
+<!--                Roles: <span sec:authentication="principal.authorities"></span> |-->
+<!--                <a th:href="@{/logout}">Sign Out</a>-->
+<!--            </span>-->
 </head>
 
 <body class="text-center">
