@@ -20,9 +20,9 @@
               </li>
             </ul>
 
-            <a class="btn btn-secondary my-2 mx-2 my-sm-0" th:href="@{/account/login}"
+            <a class="btn btn-secondary my-2 mx-2 my-sm-0" th:href="@{/user/login}"
                sec:authorize="!isAuthenticated()">로그인</a>
-            <a class="btn btn-secondary my-2 my-sm-0" th:href="@{/account/register}"
+            <a class="btn btn-secondary my-2 my-sm-0" th:href="@{/user/register}"
                sec:authorize="!isAuthenticated()">회원가입</a>
             <form class="form-inline my-2 my-lg-0" th:action="@{/logout}" method="POST" sec:authorize="isAuthenticated()">
               <span class="text-white" sec:authentication="name">사용자</span>
